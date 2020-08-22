@@ -47,7 +47,7 @@ a {
     color: #ffffff;
     font-size: 2.0rem;
     font-family: 'Barlow', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 img {
@@ -177,20 +177,30 @@ header {
     background-color: #213C28;
 }
 
-.pandaImgContainer {
+.pandaImgContainer.one {
+    float: right;
+    width: 50%;
+}
+
+.pandaImgContainer.two {
     float: left;
     width: 50%;
 }
 
-.pandaContentContainer {
+.pandaContentContainer.one {
     float: left;
+    width: 50%;
+}
+
+.pandaContentContainer.two {
+    float: right;
     width: 50%;
 }
 
 .pandaContentContainer h2 {
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 3.5%;
-    font-size: 4.2rem;
+    font-size: 4.0rem;
     font-weight: 400;
 }
 
@@ -199,7 +209,7 @@ header {
 }
 
 .pandaContentContainer button {
-    color: #213C28;
+    color: #116500;
 }
 
 .one h2,
@@ -241,7 +251,28 @@ header {
 
 .contact {
     background-color: #213C28;
-    padding: 80px 0;
+    padding: 80px 0 100px;
+}
+
+input {
+    width: 65%;
+    font-size: 2.0rem;
+    padding: 10px 0 10px 20px;
+    float: left;
+    margin: 0;
+}
+
+
+.contactUpdateContainer button {
+    width: 150px;
+    float: left;
+    margin: 0;
+    padding: 12px;
+    font-size: 1.8rem;
+    background-color: #2C2D2C;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 500;
 }
 
 .contact h3, .contact a {
@@ -262,6 +293,10 @@ header {
     width: 57.5%;
 }
 
+.contactUpdateContainer p {
+    margin-bottom: 10px;
+}
+
 .contactContactContainer {
     float: left;
     width: 32.5%;
@@ -278,3 +313,54 @@ footer {
     text-align: center;
 }
 
+/* 1080 pixels */
+
+@media (max-width: 1080px) {
+    header {
+        height: 70vh;
+    }
+
+    .pandaImgContainer.one, .pandaImgContainer.two {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .pandaContentContainer.one, .pandaContentContainer.two {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .pandaImgContainer.one img,
+    .pandaImgContainer.two img {
+        display: block;
+    }
+
+    .one h2,
+    .one p,
+    .one button,
+    .two h2,
+    .two p,
+    .two button {
+        margin: 25px 0;
+}
+
+    .one p,
+    .two p {
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        height: 60vh;
+    }
+
+}
+
+/* @media (max-width: 480px) {
+    
+} */
