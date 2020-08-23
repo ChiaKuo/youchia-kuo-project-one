@@ -198,10 +198,11 @@ header {
 }
 
 .pandaContentContainer h2 {
-    margin-top: 10%;
+    margin-top: 15%;
     margin-bottom: 3.5%;
     font-size: 4.0rem;
     font-weight: 400;
+
 }
 
 .pandaContentContainer p {
@@ -262,7 +263,6 @@ input {
     margin: 0;
 }
 
-
 .contactUpdateContainer button {
     width: 150px;
     float: left;
@@ -275,8 +275,13 @@ input {
     font-weight: 500;
 }
 
-.contact h3, .contact a {
+.contact h3{
     font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.contact a {
+    font-size: 3.0rem;
     font-weight: 300;
 }
 
@@ -351,6 +356,19 @@ footer {
     .two p {
         text-align: left;
     }
+
+    .contactUpdateContainer {
+        width: 50%;
+    }
+
+    .contactContactContainer {
+        width: 35%;
+    }
+    
+    .contactNavContainer {
+
+        width: 15%;
+    }
 }
 
 
@@ -359,8 +377,121 @@ footer {
         height: 60vh;
     }
 
+    .bottom h1 {
+        font-size: 5.0rem;
+        line-height: 5.0rem;
+        width: 280px;
+    }
+
+    .logo {
+        position: absolute;
+        right: 1000px;
+    }
+
+    .friend h2 {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+    .friendImgContainer {
+        position: absolute;
+        right: 1000px;
+    }
+    .friendContentContainer {
+        width: 100%;
+    }
+    .friendContentContainer p {
+        margin-bottom: 40px;
+    }
+
+    .friendButtonContainer {
+        text-align: center;
+    }
+
+    .friend li {
+        float: left;
+        width: calc((100% - 20px) / 2);
+        margin: 0 20px 100px 0;
+    }
+    
+    .friend li:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    .friend li:nth-of-type(3n) {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .marketing h2 {
+        margin-bottom: 40px;
+    }
+
+    .donation,
+    .job,
+    .event {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    .marketing {
+        padding: 50px 0;
+    }
+
+    .contact {
+        padding: 40px 0 100px;
+    }
+
+    .contactUpdateContainer {
+        width: 100%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .contactUpdateContainer h3 {
+        font-size: 3.5rem;
+    }
+
+
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contactButtonContainer {
+        text-align: center;
+    } 
+
+    .contactUpdateContainer button {
+        float: none;
+    }
+
+    .contactContactContainer {
+        float: left;
+        width: 62.5%;
+    }
+
+    .contactContactContainer .break {
+        width: 150px;
+    }
+    
+    .contactNavContainer {
+        text-align: right;
+        float: right;
+        width: 37.5%;
+    }
 }
 
-/* @media (max-width: 480px) {
-    
-} */
+@media (max-width: 480px) {
+    header {
+        height: 60vh;
+    }
+
+    .bottom h1 {
+        font-size: 4.0rem;
+        line-height: 4.0rem;
+        width: 220px;
+    }
+} 
